@@ -1,0 +1,14 @@
+services:
+  server:
+    image: sphericalpotatoinvacuum/soa-graphql-server
+    build:
+      context: ../server
+    ports:
+      - 8000:8000
+      - 443:443
+
+  client:
+    image: sphericalpotatoinvacuum/soa-graphql-client
+    build:
+      context: ../client
+    profiles: [ "client" ]

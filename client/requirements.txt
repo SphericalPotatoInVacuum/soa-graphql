@@ -1,0 +1,4 @@
+prompt_toolkit==3.0.29
+gql[all]==3.3.0
+pydantic==1.9.1
+loguru==0.6.0
